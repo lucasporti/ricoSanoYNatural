@@ -1,0 +1,36 @@
+Profesional{
+Nombre*
+Apellido*
+Especialidad*
+Matrícula
+}
+
+Paciente{
+Nombre*
+Apellido*
+Edad*
+Sexo*
+Disciplina*
+}
+
+PlanAlimenticio{
+edad
+pesoActual
+medidaDeCintura
+duracion = [semanal, quincenal, mensual]
+objetivosALograr?
+comida = []
+
+generarEvaluacion() -> revisar objetivos y generar calificación
+calificación -> puede ser
+Excelente -> todos los objetivos cumplidos
+Muy buena -> más del 60% de los objetivos cumplidos
+Buena -> entre el 50% y 60% de los objetivos cumplidos
+Regular -> el resto de los casos
+
+}
+
+Comida{
+tipo = DM(desayuno merienda), AC(Almuerzo cena)
+}
+
