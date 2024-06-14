@@ -20,6 +20,7 @@ La cantidad total de comidas variará de acuerdo a la duración del plan:
 * Si el plan es semanal serán 28 comidas
 * Si es quincenal serán 60
 * Si es mensual 120
+
 Las comidas se pueden clasificar en dos tipos: Desayunos y Meriendas (DM), y Almuerzos y Cenas (AC).
 Para los DM, solo será necesario registrar una descripción de la comida (Ej: Tostadas con queso untable), sin embargo, para los AC será necesario además registrar la composición de las mismas. Un plato de AC está compuesto de la siguiente manera:
 * 1 Proteína: Pollo, Carnes Rojas o Pescado
