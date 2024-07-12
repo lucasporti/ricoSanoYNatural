@@ -60,11 +60,18 @@ export class PlanAlimenticio{
         return comidasACSonProteicas;
     }
 
-    esBienVerde(){
+    esBienVerde() {
         let comidasAC = this.comida.filter((comida) => comida.tipo === 'AC');
+        let totalPorcentajeVegetales = comidasAC.reduce((sum, comida) => sum + comida.porcentajeDeVegetales(), 0);
+        let promedioPorcentajeVegetales = totalPorcentajeVegetales / comidasAC.length;
+        return promedioPorcentajeVegetales > 35;
+    }
 
-        let comidasACSonVegetales = comidasAC.every((comida) => comida.porcentajeDeVegetales() >= 35);
+    cantidadDeColaciones() {
+        return this.cantidadDeTipoDeComida('colacion');
+    }
 
-        return comidasACSonVegetales;
+    cantidadDeBebidas() {
+        return this.cantidadDeTipoDeComida('bebida');
     }
 }
